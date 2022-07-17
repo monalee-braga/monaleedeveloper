@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+body {
+  /*background-image: url('./img.gif');*/
+  
+  font-family: 'Nunito', sans-serif;
+}
 body,
 ul {
   margin: 0px;
   padding: 0px;
-  background-color: #fafafa;
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
-  font-family: 'Nunito', sans-serif;
   font-weight: 700;
 }
 
@@ -31,6 +34,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-image: -webkit-linear-gradient(0deg,#ed95aa 0%,#A25065 100%);
 }
 
 #menu {
@@ -106,4 +110,79 @@ a:hover {
     transform: rotate(-135deg);
     top: -7px;
   }
+}
+
+
+.container{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(6 , 250px);
+  grid-gap: 10px 10px;
+}
+.item{
+  font-size: 16px;
+  color: black;
+  padding: 10px 20px;
+  /*border-radius: 5px;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);*/
+}
+.item-1{
+  grid-column: 1 / 5;
+  grid-row: 1 / 4;
+  /*background-color: #db8398;*/
+  background-image: -webkit-linear-gradient(0deg,#ed95aa 0%,#A25065 100%);
+  /*background: linear-gradient(90deg, hsla(346, 71%, 76%, 1) 0%, hsla(345, 41%, 59%, 1) 100%);*/
+}
+
+.item-9{
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+  /*background-color: #6d4c41;*/
+}
+
+.item-5{
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+  background-color: #f9f9ff;
+  border-radius: 5px;
+}
+.item-6{
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  background-color: #f9f9ff;
+  border-radius: 5px;
+}
+.item-7{
+  grid-column: 3 / 4;
+  grid-row: 5 / 6;
+  background-color: #f9f9ff;
+  border-radius: 5px;
+}
+
+.item-8{
+  grid-column: 4 / 5;
+  grid-row: 5 / 6;
+  background-color: #f9f9ff;
+  border-radius: 5px;
+}
+
+.item-10{
+  grid-column: 1 / 5;
+  grid-row: 6 / 7;
+  background-color: #212529;
+}
+
+
+@media screen and (max-width: 768px){
+  .container{
+      display: block;
+  }
+  .item{
+      height: 200px;
+      margin-bottom: 10px;
+  }
+}
+
+.item h4 {
+  color: #333333
 }
